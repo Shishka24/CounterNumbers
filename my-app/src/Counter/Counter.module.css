@@ -1,0 +1,14 @@
+.item {
+  height: 100px;
+  width: 200px;
+  margin: 0;
+}
+.red {
+  color: red;
+}
+.buttonDiv {
+  height: 30px;
+  border: 2px solid rgb(40, 205, 226);
+  padding-top: 25px;
+  margin-top: 20px;
+}

@@ -1,0 +1,10 @@
+.buttonDiv {
+  padding: 25px;
+  display: inline;
+}
+.but {
+  border-radius: 15px;
+  padding: 5px;
+
+  background-color: rgb(72, 178, 228);
+}
