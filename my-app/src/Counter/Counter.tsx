@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import s from "./Counter.module.css";
 
@@ -15,6 +15,17 @@ export const Counter = () => {
   const resetCounter = () => {
     setCounter(start);
   };
+  useEffect(() => {
+    let valueAsString = localStorage.getItem("counterValue");
+    if (valueAsString) {
+      let newValue = JSON.parse(valueAsString);
+      setCounter(newValue);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("counterValue", JSON.stringify(counter));
+  }, [counter]);
+
   const countClassName = counter === maxValue ? s.red : "";
   return (
     <div className={s.item}>

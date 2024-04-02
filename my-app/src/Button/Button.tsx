@@ -1,10 +1,10 @@
 import s from "./Button.module.css";
 
 type ButtonPropsType = {
-  counter: number;
+  counter?: number;
   title: string;
   callBack: () => void;
-  isDisabled: boolean;
+  isDisabled?: boolean;
 };
 
 export const Button = (props: ButtonPropsType) => {

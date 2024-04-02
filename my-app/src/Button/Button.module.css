@@ -5,6 +5,6 @@
 .but {
   border-radius: 15px;
   padding: 5px;
-
+  cursor: pointer;
   background-color: rgb(72, 178, 228);
 }
